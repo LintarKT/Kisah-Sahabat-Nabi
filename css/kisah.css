@@ -1,0 +1,260 @@
+/* =========================================================
+   kisah.css — gaya khusus halaman kisah sahabat
+   Pasang SETELAH style.css:
+   <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="kisah.css" />
+   ========================================================= */
+
+:root {
+  --kisah-hijau: #064d1b;
+  --kisah-oranye: #f8a01d;
+  --kisah-kartu: #fffdf8;
+  --kisah-teks: #2b2b2b;
+  --kisah-teks-lembut: #4b5563;
+}
+
+body.dark-mode {
+  --kisah-kartu: #1e1e1e;
+  --kisah-teks: #e5e7eb;
+  --kisah-teks-lembut: #d1d5db;
+}
+
+/* ---------- Hero ---------- */
+.kisah-hero {
+  /* padding-top besar karena navbar bersifat fixed */
+  padding: 9rem 7% 3.5rem;
+  background: linear-gradient(135deg, #064d1b 0%, #0b6b28 100%);
+  color: #ffffff;
+}
+
+.kisah-hero-inner {
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.kisah-hero img {
+  width: 160px;
+  height: 160px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--kisah-oranye);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+.kisah-hero h1 {
+  font-size: 2.6rem;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.kisah-hero .julukan {
+  margin-top: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-style: italic;
+  color: #fde7bd;
+}
+
+/* ---------- Layout isi ---------- */
+.kisah-wrap {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2.5rem 7% 4rem;
+}
+
+/* ---------- Profil singkat ---------- */
+.kisah-profil {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem 2rem;
+  background-color: var(--kisah-kartu);
+  border: 1px solid var(--primary);
+  border-left: 5px solid var(--kisah-oranye);
+  border-radius: 1rem;
+  padding: 1.4rem 1.8rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.kisah-profil dt {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--kisah-hijau);
+}
+
+.kisah-profil dd {
+  font-size: 1rem;
+  color: var(--kisah-teks);
+  margin-bottom: 0.4rem;
+}
+
+/* ---------- Isi cerita ---------- */
+.kisah-isi h2 {
+  font-size: 1.6rem;
+  color: var(--kisah-hijau);
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 3px solid var(--kisah-oranye);
+  display: inline-block;
+}
+
+.kisah-isi p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--kisah-teks);
+  margin-bottom: 1.1rem;
+  max-width: 70ch;
+}
+
+/* Kutipan: dialog, ucapan, atau hadis */
+.kisah-isi blockquote {
+  margin: 1.6rem 0;
+  padding: 1.1rem 1.5rem;
+  background-color: var(--kisah-kartu);
+  border-left: 5px solid var(--kisah-hijau);
+  border-radius: 0 0.8rem 0.8rem 0;
+  font-style: italic;
+  line-height: 1.8;
+  color: var(--kisah-teks);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.kisah-isi blockquote cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--kisah-hijau);
+}
+
+/* ---------- Pelajaran ---------- */
+.kisah-pelajaran {
+  margin-top: 2.5rem;
+  padding: 1.6rem 1.8rem;
+  background-color: var(--kisah-kartu);
+  border: 1px solid var(--primary);
+  border-top: 5px solid var(--kisah-oranye);
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.kisah-pelajaran h2 {
+  margin: 0 0 1rem;
+  border: none;
+  display: block;
+}
+
+.kisah-pelajaran ul {
+  padding-left: 1.3rem;
+}
+
+.kisah-pelajaran li {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--kisah-teks);
+  margin-bottom: 0.6rem;
+}
+
+.kisah-pelajaran li::marker {
+  color: var(--kisah-oranye);
+}
+
+/* ---------- Sumber ---------- */
+.kisah-sumber {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: var(--kisah-teks-lembut);
+}
+
+.kisah-sumber h3 {
+  font-size: 1rem;
+  color: var(--kisah-hijau);
+  margin-bottom: 0.4rem;
+}
+
+.kisah-sumber ul {
+  padding-left: 1.2rem;
+}
+
+.kisah-sumber li {
+  margin-bottom: 0.3rem;
+}
+
+/* ---------- Navigasi sebelumnya / berikutnya ---------- */
+.kisah-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.kisah-nav a {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #f8a01dcc;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.2s ease;
+}
+
+.kisah-nav a:hover {
+  background-color: var(--kisah-hijau);
+}
+
+/* ---------- Dark mode ---------- */
+body.dark-mode .kisah-hero {
+  background: linear-gradient(135deg, #0f2a17 0%, #14532d 100%);
+}
+
+body.dark-mode .kisah-profil dt,
+body.dark-mode .kisah-isi h2,
+body.dark-mode .kisah-sumber h3,
+body.dark-mode .kisah-isi blockquote cite {
+  color: #4ade80;
+}
+
+body.dark-mode .kisah-isi blockquote {
+  border-left-color: #4ade80;
+}
+
+body.dark-mode .kisah-nav a:hover {
+  background-color: #4ade80;
+  color: #121212;
+}
+
+/* ---------- Responsif ---------- */
+@media (max-width: 768px) {
+  .kisah-hero {
+    padding-top: 8rem;
+  }
+
+  .kisah-hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .kisah-hero h1 {
+    font-size: 2rem;
+  }
+
+  .kisah-profil {
+    grid-template-columns: 1fr;
+  }
+
+  .kisah-nav {
+    flex-direction: column;
+  }
+
+  .kisah-nav a {
+    text-align: center;
+  }
+}
