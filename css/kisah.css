@@ -258,3 +258,41 @@ body.dark-mode .kisah-nav a:hover {
     text-align: center;
   }
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 5%;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 12px 20px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  main {
+    width: 92%;
+    padding-top: 25px;
+  }
+
+  .hero {
+    padding: 30px 23px;
+  }
+
+  .content-card {
+    padding: 22px;
+  }
+
+  .tujuan-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 23px;
+  }
+}
