@@ -233,80 +233,53 @@ body.dark-mode .kisah-nav a:hover {
 
 
 
-
 @media screen and (max-width: 768px) {
 
-  /* Navbar */
-  .navbar {
-    padding: 1rem 4%;
-    flex-wrap: wrap;
-    gap: 0.8rem;
+  
+  .kisah-hero {
+    padding: 8rem 5% 3rem;
   }
 
-  .navbar .navbar-logo {
-    font-size: 1.2rem;
+  .kisah-hero-inner {
+    gap: 1.5rem;
   }
 
-  .navbar .navbar-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
+  .kisah-hero img {
+    width: 130px;
+    height: 130px;
   }
 
-  .navbar .navbar-nav a {
-    font-size: 0.95rem;
-    margin: 0 0.4rem;
-  }
-
-  /* Hero Beranda */
-  .hero-beranda .content {
-    padding: 1.4rem 5%;
-  }
-
-  .hero-beranda .content h1 {
-    font-size: 3rem;
-  }
-
-  .hero-beranda .content p {
-    font-size: 1.1rem;
-  }
-
-  /* Kartu Kisah Favorit */
-  .kisahfavorit-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-
-  .kisahfavorit h2 {
+  .kisah-hero h1 {
     font-size: 2rem;
   }
 
-  /* Daftar Kisah */
-  .daftarkisah-item {
-    gap: 1rem;
-    padding: 1rem;
+  .kisah-hero .julukan {
+    font-size: 1rem;
   }
 
-  .daftarkisah-item img {
-    width: 110px;
-    height: 110px;
+  
+  .kisah-profil {
+    gap: 0.8rem 1rem;
+    padding: 1.2rem;
   }
 
-  /* Hero Daftar Kisah */
-  .hero-daftarkisah {
-    padding: 7rem 5% 2rem;
+  
+  .kisah-isi h2 {
+    font-size: 1.4rem;
   }
 
-  /* Hero Detail Kisah */
-  .hero-kisahabubakar .content h1 {
-    font-size: 2.3rem;
+  .kisah-isi p {
+    font-size: 1rem;
   }
 
-  /* Pencarian */
-  .navbar .search-form {
-    right: 4%;
-    width: min(18rem, 90vw);
+  
+  .kisah-pelajaran {
+    padding: 1.3rem;
+  }
+
+  
+  .kisah-nav a {
+    padding: 0.8rem 1.2rem;
   }
 }
 
@@ -319,150 +292,108 @@ body.dark-mode .kisah-nav a:hover {
     overflow-x: hidden;
   }
 
-  /* Navbar */
-  .navbar {
-    padding: 0.8rem 3%;
-    justify-content: center;
+  /* Hero Kisah */
+  .kisah-hero {
+    padding: 7.5rem 5% 2.5rem;
+    text-align: center;
   }
 
-  .navbar .navbar-logo {
-    font-size: 1.1rem;
-  }
-
-  .navbar .navbar-nav {
-    width: 100%;
-    gap: 0.3rem;
-  }
-
-  .navbar .navbar-nav a {
-    font-size: 0.8rem;
-    margin: 0 0.3rem;
-  }
-
-  .navbar .navbar-extra a {
-    font-size: 0.9rem;
-  }
-
-  /* Hero Beranda */
-  .hero-beranda {
-    min-height: 85vh;
-    background-position: center;
-  }
-
-  .hero-beranda .content {
-    padding: 1rem 5%;
-  }
-
-  .hero-beranda .content h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero-beranda .content p {
-    font-size: 0.95rem;
-  }
-
-  .hero-beranda .content .cta {
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-  }
-
-  /* Kisah Favorit */
-  .kisahfavorit {
-    padding: 2rem 4%;
-  }
-
-  .kisahfavorit h2 {
-    font-size: 1.6rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .kisahfavorit-container {
-    grid-template-columns: 1fr;
+  .kisah-hero-inner {
+    flex-direction: column;
     gap: 1rem;
   }
 
-  .kisahfavorit-card {
-    padding: 1.2rem;
+  .kisah-hero img {
+    width: 115px;
+    height: 115px;
   }
 
-  /* Daftar Kisah */
-  .hero-daftarkisah {
-    padding: 9rem 5% 2rem;
+  .kisah-hero h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
   }
 
-  .hero-daftarkisah .content h1 {
-    font-size: 1.6rem;
-  }
-
-  .hero-daftarkisah .content p {
+  .kisah-hero .julukan {
     font-size: 0.95rem;
   }
 
-  .daftarkisah {
-    padding: 1rem 4% 3rem;
+  /* Layout isi */
+  .kisah-wrap {
+    padding: 1.5rem 5% 3rem;
   }
 
-  .daftarkisah-item {
-    flex-direction: column;
-    align-items: stretch;
-    text-align: center;
+  
+  .kisah-profil {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+    padding: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .kisah-profil dt {
+    font-size: 0.8rem;
+  }
+
+  .kisah-profil dd {
+    font-size: 0.95rem;
+  }
+
+  
+  .kisah-isi h2 {
+    font-size: 1.3rem;
+    margin: 1.8rem 0 0.8rem;
+  }
+
+  .kisah-isi p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+ 
+  .kisah-isi blockquote {
     padding: 1rem;
-  }
-
-  .daftarkisah-item img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-  }
-
-  .daftarkisah-item h3 {
-    font-size: 1.1rem;
-  }
-
-  .daftarkisah-item p {
+    margin: 1.2rem 0;
     font-size: 0.9rem;
   }
 
-  .daftarkisah .daftarkisah-item .cta {
-    padding: 0.8rem 1.5rem;
+  
+  .kisah-pelajaran {
+    margin-top: 2rem;
+    padding: 1.1rem;
   }
 
-  /* Detail Kisah */
-  .hero-kisahabubakar .content {
-    padding: 1rem 5%;
+  .kisah-pelajaran h2 {
+    font-size: 1.25rem;
   }
 
-  .hero-kisahabubakar .content h1 {
-    font-size: 1.8rem;
+  .kisah-pelajaran li {
+    font-size: 0.95rem;
+    line-height: 1.7;
   }
 
-  .hero-kisahabubakar .content p {
-    font-size: 1rem;
+  
+  .kisah-sumber {
+    font-size: 0.85rem;
+    overflow-wrap: anywhere;
   }
 
-  /* Modal Favorit */
-  .favorit-modal-content {
-    padding: 1rem;
-    max-height: 85vh;
+  
+  .kisah-nav {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 2rem;
   }
 
-  .favorit-item {
-    gap: 0.6rem;
-  }
-
-  .favorit-item img {
-    width: 55px;
-    height: 55px;
-  }
-
-  /* Tombol dan Pencarian */
-  .cta-kecil,
-  .btn-hapus-fav {
-    font-size: 0.75rem;
-  }
-
-  .navbar .search-form {
-    width: 92%;
-    right: 4%;
+  .kisah-nav a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0.85rem 1rem;
+    font-size: 0.9rem;
   }
 }
+
+
+
+
